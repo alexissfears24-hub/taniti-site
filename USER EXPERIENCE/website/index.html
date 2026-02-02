@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Taniti | Book Your Stay</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+<section class="hero">
+    <img src="media/island17.jpg" alt="Beautiful tropical island with turquoise water and white sand beach">
+</section>
+
+  <div class="topbar">
+    <div class="brand">
+      <strong>Visit Taniti</strong>
+      <span>Book stays • Plan activities • Travel smarter</span>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Booking</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero" aria-label="Booking hero">
+    <span class="badge">💳 Currency: USD • Cards accepted</span>
+    <h1>Book your Taniti stay in minutes</h1>
+    <p>
+      Compare lodging types near Taniti City and Merriton Landing. Choose your dates, guests, and style—then send a booking request.
+    </p>
+  </section>
+
+  <h2 class="section-title">Choose a lodging type</h2>
+  <section class="grid two" aria-label="Lodging options">
+    <article class="card">
+      <h3>Hotel</h3>
+      <p>Convenient, regulated, and close to major attractions.</p>
+      <ul class="list">
+        <li>Best for: families & first-time visitors</li>
+        <li>Typical location: Taniti City / Merriton Landing</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Private Home (Airbnb-style)</h3>
+      <p>More space, privacy, and “live like a local” vibes.</p>
+      <ul class="list">
+        <li>Best for: groups & longer stays</li>
+        <li>Often requires: rental car or private transit</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Beach House</h3>
+      <p>Steps from the sand—ideal for beach-first trips.</p>
+      <ul class="list">
+        <li>Best for: couples & families who want beach time</li>
+        <li>Pro tip: check distance to dining/shops</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Bed & Breakfast</h3>
+      <p>Small, cozy stays with personal service.</p>
+      <ul class="list">
+        <li>Best for: honeymoons & quiet travelers</li>
+        <li>Often includes: breakfast + local tips</li>
+      </ul>
+    </article>
+  </section>
+
+  <h2 class="section-title">Booking request</h2>
+  <section class="card" aria-label="Booking form">
+    <form class="form" onsubmit="return false;">
+      <div class="row">
+        <div>
+          <label for="lodgingType">Lodging type</label>
+          <select id="lodgingType" required>
+            <option value="">Select one…</option>
+            <option>Hotel</option>
+            <option>Private Home (Airbnb-style)</option>
+            <option>Beach House</option>
+            <option>Bed & Breakfast</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="locationPref">Preferred area</label>
+          <select id="locationPref">
+            <option>Taniti City</option>
+            <option>Merriton Landing</option>
+            <option>Yellow Leaf Bay (general)</option>
+            <option>Flexible / Not sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="checkin">Check-in</label>
+          <input id="checkin" type="date" required />
+        </div>
+        <div>
+          <label for="checkout">Check-out</label>
+          <input id="checkout" type="date" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="guests">Guests</label>
+          <select id="guests" required>
+            <option value="">Select…</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="budget">Budget (per night)</label>
+          <select id="budget">
+            <option>Under $100</option>
+            <option>$100–$200</option>
+            <option>$200–$350</option>
+            <option>$350+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@email.com" required />
+        </div>
+      </div>
+
+      <div>
+        <label for="notes">Requests (optional)</label>
+        <textarea id="notes" placeholder="Ex: ground-floor room, near beach, kid-friendly, airport pickup..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" type="submit">Send Booking Request</button>
+        <a class="btn" href="transportation.html">See Transportation Options</a>
+        <span class="small">Note: Demo site—this form does not send emails.</span>
+      </div>
+    </form>
+  </section>
+
+  <section class="footer">
+    <div class="grid two">
+      <div>
+        <strong>Quick travel notes</strong>
+        <ul class="list">
+          <li>Power outlets: 120V</li>
+          <li>Violent crime rare; petty theft possible</li>
+          <li>Many attractions close on national holidays</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Explore</strong><br />
+        <a href="dining.html">Dining</a> •
+        <a href="entertainment.html">Entertainment</a> •
+        <a href="transportation.html">Transportation</a>
+      </div>
+      <footer>
+    <p>&copy; 2026 Taniti Tourism Board</p>
+
+    <p class="credit">
+        Image source:
+        <a href="https://pianohagens.github.io/Tahiti-Island-Attraction/images/island17.JPG" target="_blank">
+            pianohagens.github.io
+        </a>
+    </p>
+</footer>
+
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

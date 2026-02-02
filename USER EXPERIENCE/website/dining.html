@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Taniti | Dining</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <strong>Visit Taniti</strong>
+      <span>Dining options across Taniti City & Merriton Landing</span>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Booking</a></li>
+        <li><a href="dining.html" aria-current="page">Dining</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <span class="badge">🍽️ 10 restaurants total</span>
+    <h1>Find the right meal for your trip</h1>
+    <p>
+      From local fish and rice to American-style classics and Pan-Asian cuisine—Taniti has options for quick bites or date nights.
+    </p>
+  </section>
+
+  <h2 class="section-title">Dining categories</h2>
+  <section class="grid three" aria-label="Dining categories">
+    <article class="card">
+      <h3>Local Fish & Rice (5)</h3>
+      <p>Fresh seafood, island staples, and simple comfort food.</p>
+      <ul class="list">
+        <li>Best for: authentic local flavor</li>
+        <li>Common near: Taniti City waterfront</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>American-style (3)</h3>
+      <p>Burgers, sandwiches, salads, and familiar favorites.</p>
+      <ul class="list">
+        <li>Best for: picky eaters & families</li>
+        <li>Common near: Merriton Landing</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Pan-Asian (2)</h3>
+      <p>Noodles, stir-fries, rice bowls, and shared plates.</p>
+      <ul class="list">
+        <li>Best for: groups & variety</li>
+        <li>Often busier at dinner</li>
+      </ul>
+    </article>
+  </section>
+
+  <h2 class="section-title">Plan a meal</h2>
+  <section class="card" aria-label="Dining planner form">
+    <form class="form" onsubmit="return false;">
+      <div class="row">
+        <div>
+          <label for="cuisine">Cuisine</label>
+          <select id="cuisine" required>
+            <option value="">Select…</option>
+            <option>Local Fish & Rice</option>
+            <option>American-style</option>
+            <option>Pan-Asian</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mealTime">Meal time</label>
+          <select id="mealTime">
+            <option>Breakfast</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
+            <option>Late-night (check hours)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="partySize">Party size</label>
+          <select id="partySize">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="area">Area</label>
+          <select id="area">
+            <option>Taniti City</option>
+            <option>Merriton Landing</option>
+            <option>Yellow Leaf Bay</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" type="submit">Save Dining Plan</button>
+        <a class="btn" href="entertainment.html">Pair with an Activity</a>
+        <span class="small">Tip: many businesses close on national holidays.</span>
+      </div>
+    </form>
+  </section>
+
+  <section class="footer">
+    <div class="grid two">
+      <div>
+        <strong>Helpful info</strong>
+        <ul class="list">
+          <li>Currency: USD (many accept cards)</li>
+          <li>Alcohol not sold/served: midnight–9:00 a.m.</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Next step</strong><br />
+        Consider how you’ll get around: <a href="transportation.html">Transportation</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
